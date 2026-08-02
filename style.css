@@ -179,6 +179,34 @@ img {
   }
 }
 
+/* 🔧 Ajuste general para imágenes dentro de tarjetas o secciones */
+.card img,
+.servicio img,
+.contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* 🔧 Evita que el contenido se salga del borde del contenedor */
+.card,
+.servicio,
+.contenedor-imagen {
+  overflow: hidden;
+}
+
+/* 🔧 Ajuste específico para pantallas pequeñas */
+@media (max-width: 576px) {
+  .card img,
+  .servicio img,
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
 
 /* Obras */
 .card-obra {
