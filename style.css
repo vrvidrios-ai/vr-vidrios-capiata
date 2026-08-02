@@ -1,0 +1,219 @@
+:root {
+  --azul-oscuro: #0B1A3A;
+  --azul: #1E3A8A;
+  --celeste: #4FC3F7;
+  --blanco: #FFFFFF;
+}
+/* Encabezado */
+.encabezado {
+  position: fixed; /* mantiene el encabezado fijo */
+  top: 0; /* lo coloca en la parte superior */
+  left: 0;
+  width: 100%; /* ocupa todo el ancho */
+  z-index: 1000; /* asegura que quede encima del contenido */
+  background-color: #fff;
+  border-bottom: 3px solid #1E3A8A;
+  padding: 10px 40px;
+}
+body {
+  padding-top: 100px; /* espacio igual a la altura del encabezado */
+}
+
+.logo {
+  height: 55px;
+  margin-right: 9px;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  color: #0B1A3A;
+  font-weight: 700;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Ícono de WhatsApp */
+.icono-redes {
+  height: 30px;
+  margin-left: 15px;
+  transition: transform 0.2s;
+}
+
+.icono-redes:hover {
+  transform: scale(1.2);
+}
+
+/* Menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-menu {
+  background-color: #1E3A8A;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-menu:hover {
+  background-color: #4FC3F7;
+  color: #000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: #0B1A3A;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4FC3F7;
+  color: #fff;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 55px;
+}
+
+.hero {
+  background-image: url('img/fondito.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.titulo-principal {
+  font-size: 2.3rem; /* tamaño más equilibrado */
+  font-family: 'Segoe UI Black', fantasy;
+  font-weight: 1500;
+  color: #080808;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.40rem;
+  color: #02405d; /* celeste del logo */
+  margin-bottom: 50px;
+}
+
+.descripcion {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #222121;
+}
+
+
+/* Secciones */
+.titulo-seccion {
+  color: #1E3A8A;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accordion-button {
+  color: #1E3A8A;
+  font-weight: 500;
+  background-color: #F8F9FA;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+}
+
+.accordion-body img {
+  max-width: 400px;
+  border: 3px solid #1E3A8A;
+}
+
+
+/* Obras */
+.card-obra {
+  background-color: #E5E5E5;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Tipos de Vidrios */
+.card-vidrio {
+  background-color: #F5F5F5;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.d-block{
+    height: 800px;
+    width: 1000px;
+    content: center;
+}
+.titulo-seccion {
+  color: #1E3A8A;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-outline-primary {
+  color: #1E3A8A;
+  border-color: #1E3A8A;
+}
+
+.btn-outline-primary:hover {
+  background-color: #1E3A8A;
+  color: #fff;
+}
