@@ -160,6 +160,25 @@ body {
   border: 3px solid #1E3A8A;
 }
 
+/* 🔧 Ajuste para imágenes en vista móvil */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 🔧 Si usás contenedores o secciones con imágenes */
+@media (max-width: 576px) {
+  .contenedor-imagen,
+  .card img,
+  .servicio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 
 /* Obras */
 .card-obra {
